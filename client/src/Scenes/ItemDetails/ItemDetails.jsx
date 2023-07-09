@@ -36,7 +36,7 @@ const ItemDetails = () => {
        <Box width='80%' m='80px auto'>
             <Box display='flex' flexWrap='wrap' columnGap='40px'>
             <Box flex='1 1 40%' mb='40px'>
-                <img style={{objectFit:'contain'}} width='100%' height='100%' src={`http://localhost:1337${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`} alt="" />
+                <img style={{objectFit:'contain'}} width='100%' height='100%' src={`${import.meta.env.VITE_BACKENDURL}${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`} alt="" />
             </Box>
             <Box flex='1 1 50%' mb='40px'>
                 <Box display='flex' justifyContent='space-between'>
