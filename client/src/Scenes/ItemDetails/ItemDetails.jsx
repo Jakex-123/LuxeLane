@@ -49,7 +49,7 @@ const ItemDetails = () => {
                 </Box>
                 <Box m='65px 0 25px 0'>
                     <Typography variant='h3'>{item?.attributes?.name}</Typography>
-                    <Typography>₹{item?.attributes?.price}</Typography>
+                    <Typography>${item?.attributes?.price}</Typography>
                     <Typography sx={{mt:'20px'}}>{item?.attributes?.lDescription}</Typography>
                 </Box>
                 <Box display='flex' minHeight="40px">
