@@ -53,7 +53,7 @@ function Item({ item, width }) {
             .replace(/^./, (str) => str.toUpperCase())}
                 </Typography>
                 <Typography>{name}</Typography>
-                <Typography fontWeight='bold'>₹{price}</Typography>
+                <Typography fontWeight='bold'>${price}</Typography>
             </Box>
         </Box>
     )
