@@ -36,8 +36,8 @@ module.exports = createCoreController("api::order.order", ({ strapi }) => ({
         payment_method_types: ["card"],
         customer_email: email,
         mode: "payment",
-        success_url: "http://localhost:5173/checkout/success",
-        cancel_url: "http://localhost:5173",
+        success_url: "https://luxelane-sage.vercel.app/checkout/success",
+        cancel_url: "https://luxelane-sage.vercel.app/",
         line_items: lineItems,
       });
 
