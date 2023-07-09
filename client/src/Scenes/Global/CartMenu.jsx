@@ -62,7 +62,7 @@ const CartMenu = () => {
                                                 <AddIcon />
                                             </IconButton>
                                         </Box>
-                                        <Typography fontWeight='bold'>₹{item.attributes.price}</Typography>
+                                        <Typography fontWeight='bold'>${item.attributes.price}</Typography>
                                     </FlexBox>
                                 </Box>
                             </FlexBox>
@@ -76,7 +76,7 @@ const CartMenu = () => {
                             Subtotal
                         </Typography>
                         <Typography fontWeight='bold'>
-                            ₹{totalPrice}
+                            ${totalPrice}
                         </Typography>
                     </FlexBox>
                     <Button sx={{ backgroundColor: shades.primary[400], color: 'white', borderRadius: '0', minWidth: '100%', padding: '20px 40px', margin: '20px 0' }} onClick={() => { navigate('/checkout'); dispatch(setCartOpen({})) }}>
