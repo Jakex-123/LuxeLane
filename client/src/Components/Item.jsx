@@ -28,7 +28,7 @@ function Item({ item, width }) {
     return (
         <Box width={width}>
             <Box position='relative' onMouseOver={() => { setIsHovered(true) }} onMouseOut={() => { setIsHovered(false) }}>
-                <img style={{ cursor: "pointer" }} src={`${import.meta.env.BACKENDURL}${url}`} alt={item.name} width='300px' height='400px' onClick={() => { navigate(`/item/${item.id}`) }} />
+                <img style={{ cursor: "pointer" }} src={`https://strapi-ecom-he9e.onrender.com$${url}`} alt={item.name} width='300px' height='400px' onClick={() => { navigate(`/item/${item.id}`) }} />
                 <Box display={isHovered ? 'block' : 'none'} position='absolute' bottom='10%' left='0' width='100%' padding='0 5%'>
                     <Box display='flex' justifyContent='space-between'>
                         <Box display='flex' alignItems='center' backgroundColor={shades.neutral[100]} borderRadius='3px'>
